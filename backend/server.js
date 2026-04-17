@@ -12,9 +12,9 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect("mongodb://127.0.0.1:27017/portfolioDB")
-    .then(() => console.log("MongoDB connected successfully"))
-    .catch((err) => console.log("MongoDB error:", err));
+mongoose.connect("mongodb+srv://rajnarayanans2005_db_user:YOUR_PASSWORD@mycluster.9pdhbzx.mongodb.net/portfolioDB")
+    .then(() => console.log("MongoDB connected"))
+    .catch(err => console.log(err));
 
 // Schema
 const messageSchema = new mongoose.Schema({
