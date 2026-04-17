@@ -14,7 +14,7 @@ document.getElementById("loginBtn").addEventListener("click", async function () 
     console.log("Sending login request...");
 
     try {
-        const response = await fetch("http://localhost:5000/login", {
+        const response = await fetch("https://my-portfolio-website-2-y6lb.onrender.com/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

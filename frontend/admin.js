@@ -6,7 +6,7 @@ if (localStorage.getItem("isLoggedIn") !== "true") {
 
 // Load visitor count
 async function loadVisitors() {
-    const response = await fetch("http://localhost:5000/visit");
+    const response = await fetch("https://my-portfolio-website-2-y6lb.onrender.com/visit");
     const data = await response.json();
 
     document.getElementById("adminVisitors").innerText = data.count;
@@ -14,7 +14,7 @@ async function loadVisitors() {
 
 // Load feedback messages
 async function loadMessages() {
-    const response = await fetch("http://localhost:5000/feedback");
+    const response = await fetch("https://my-portfolio-website-2-y6lb.onrender.com/feedback");
     const messages = await response.json();
 
     let output = "";
@@ -40,7 +40,7 @@ async function deleteMessage(id) {
     console.log("Deleting ID =", id);
 
     try {
-        const response = await fetch(`http://localhost:5000/feedback/${id}`, {
+        const response = await fetch(`https://my-portfolio-website-2-y6lb.onrender.com/feedback/${id}`, {
             method: "DELETE"
         });
 
@@ -64,7 +64,7 @@ loadVisitors();
 
 async function loadMessages() {
     try {
-        const response = await fetch("http://localhost:5000/feedback");
+        const response = await fetch("https://my-portfolio-website-2-y6lb.onrender.com/feedback");
         allMessages = await response.json();
 
         console.log("MESSAGES RECEIVED =", allMessages);

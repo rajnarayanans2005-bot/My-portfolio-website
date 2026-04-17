@@ -16,8 +16,8 @@ form.addEventListener("submit", async function (e) {
         message: document.getElementById("message").value
     };
 
-    const response = await fetch("http://localhost:5000/feedback", {
-        method: "POST",
+                const response = await fetch("https://my-portfolio-website-2-y6lb.onrender.com/feedback", {
+                    method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
@@ -29,7 +29,7 @@ form.addEventListener("submit", async function (e) {
 });
 window.addEventListener("load", async function () {
     try {
-        const response = await fetch("http://localhost:5000/visit");
+        const response = await fetch("https://my-portfolio-website-2-y6lb.onrender.com/feedback");
         const data = await response.json();
 
         document.getElementById("visitorCount").innerText =
