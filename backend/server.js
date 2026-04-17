@@ -54,10 +54,10 @@ app.get("/feedback", async (req, res) => {
         const messages = await Message.find();
         res.json(messages);
     } catch (error) {
+        console.log("FETCH ERROR =", error); // 👈 IMPORTANT
         res.status(500).json({ error: "Failed to fetch messages" });
     }
 });
-
 
 // LOGIN ROUTE
 app.post("/login", (req, res) => {
