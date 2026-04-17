@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <button id="logoutBtn">Logout</button>.
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="admin-container">
+        <h1>Admin Dashboard</h1>
+
+        <div class="stats-card">
+            <h2>Total Visitors</h2>
+            <p id="adminVisitors">Loading...</p>
+        </div>
+        
+ <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search messages..."
+    onkeyup="filterMessages()"
+/>
+
+<div id="messages"> </div>
+        <div class="messages-section">
+            <h2>Visitor Messages</h2>
+            <div id="messages"></div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
