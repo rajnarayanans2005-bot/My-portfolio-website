@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li> <a href="#contact">Contact</a></li>
+        </ul>
+        
+    </nav>
+     <!-- Header -->
+    <header>
+        <h1>Raj Narayanan</h1>
+        <p>Web Developer | Flutter Learner</p>
+        <p id="visitorCount">Visitors: loading...</p>
+        <a href="resume.pdf" download class="download-btn" id="resumeBtn">
+    Download Resume
+        </a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        
+        <h2>About Me</h2>
+        <p>
+            I am a passionate developer interested in web de    velopment,
+            Flutter, and technical support.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Flutter</li>
+                <li>Python</li>
+            </ul>   
+   
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+        <h3>Portfolio Website</h3>
+         <p>Full-stack portfolio with admin dashboard</p>
+         <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <p>A responsive website to showcase my skills and projects.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Flutter App</h3>
+        <p>A simple mobile app built using Flutter and Dart.</p>
+    </div>
+      <div class="project-card">
+        <h3>Calculator App</h3>
+        <p>A simple calculator app built using Flutter and Dart.</p>
+      </div>
+    </section>
+     <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:rajnarayanans2005@gmail.com" target="_blank">rajanarayanans2005@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919385627264" target="_blank">+91 9385627264</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn Profile</a></p>
+</section>
+    <section id="contact">
+     <h2>Basic Contact Info</h2>
+
+     <form id="contactForm">
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+     </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
