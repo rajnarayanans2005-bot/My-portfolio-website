@@ -16,6 +16,12 @@ async function loadVisitors() {
 async function loadMessages() {
     const response = await fetch("https://my-portfolio-website-2-y6lb.onrender.com/feedback");
     const messages = await response.json();
+    console.log("MESSAGES RECEIVED =", messages);
+    if (Array.isArray(messages)) {
+    displayMessages(messages);
+} else {
+    console.log("ERROR FROM SERVER:", messages);
+}
 
     let output = "";
 

@@ -29,12 +29,19 @@ form.addEventListener("submit", async function (e) {
 });
 window.addEventListener("load", async function () {
     try {
-        const response = await fetch("https://my-portfolio-website-2-y6lb.onrender.com/feedback");
+        const response = await fetch("https://my-portfolio-website-2-y6lb.onrender.com/visit");
         const data = await response.json();
 
-        document.getElementById("visitorCount").innerText =
-            "Visitors: " + data.count;
+        console.log("VISITOR DATA =", data);
+
+        if (data.count !== undefined) {
+            document.getElementById("visitorCount").innerText =
+                "Visitors: " + data.count;
+        } else {
+            console.log("Visitor error:", data);
+        }
+
     } catch (error) {
-        console.log("Visitor count error:", error);
+        console.log("Visitor fetch error:", error);
     }
 });
