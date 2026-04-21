@@ -14,14 +14,8 @@ async function loadVisitors() {
 
 // Load feedback messages
 async function loadMessages() {
-    const response = await fetch("https://my-portfolio-website-2-y6lb.onrender.com/feedback");
+    const response = await fetch("https://rajnarayanans2005-bot.github.io/My-portfolio-website/admin.html/feedback");
     const messages = await response.json();
-    console.log("MESSAGES RECEIVED =", messages);
-    if (Array.isArray(messages)) {
-    displayMessages(messages);
-} else {
-    console.log("ERROR FROM SERVER:", messages);
-}
 
     let output = "";
 
