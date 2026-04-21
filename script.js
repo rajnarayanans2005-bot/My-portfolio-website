@@ -15,6 +15,9 @@ form.addEventListener("submit", async function (e) {
         email: document.getElementById("email").value,
         message: document.getElementById("message").value
     };
+    const sendButton = document.getElementById("sendBtn");
+     sendButton.addEventListener("click", function () {
+    alert("Message sent...");
 
                 const response = await fetch("https://my-portfolio-website-2-y6lb.onrender.com/feedback", {
                     method: "POST",
