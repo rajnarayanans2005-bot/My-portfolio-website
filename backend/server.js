@@ -12,8 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect("mongodb+srv://USERNAME:PASSWORD@cluster.mongodb.net/portfolioDB")
-    .then(() => console.log("MongoDB connected successfully"))
+mongoose.connect("mongodb+srv://rajnarayanans2005_db_user:hari0007@mycluster.9pdhbzx.mongodb.net/portfolioDB")    .then(() => console.log("MongoDB connected successfully"))
     .catch((err) => console.log("MongoDB error:", err));
 // Schema
 const messageSchema = new mongoose.Schema({
